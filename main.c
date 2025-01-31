@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "host.c"
+
 // Variables
 char mainLine[100] = "======================================================";
 char secondaryLine[100] = "------------------------------------------------------";
@@ -34,7 +36,8 @@ void setupGame() {
     scanf("%c", &mode);
 
     if (mode == 'h') {
-        printf("Host Game\n");
+        // printf("Host Game\n");
+        startHost();
     } else if (mode == 'j') {
         printf("Join Game\n");
     } else {
@@ -46,7 +49,7 @@ void setupGame() {
 
 // Main function
 int main() {
-    // Start up info
+    // Start-up info
     printf("TIC TAC TOE\n");
     printf("A multiplayer game over the internet\n");
     printf("\nMade by rileydeman\n");
