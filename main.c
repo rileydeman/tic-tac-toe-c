@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "host.c"
+#include "core/host.c"
 
 // Variables
 char mainLine[100] = "======================================================";
